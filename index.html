@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snek</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background-color: black;
+        }
+
+        h1 {
+            font-family: 'Press Start 2P', cursive;
+            color: white;
+        }
+
+        #game-board {
+            background-color: #ccc;
+            width: 80vmin;
+            height: 80vmin;
+            display: grid;
+            grid-template-columns: repeat(21, 1fr);
+            grid-template-rows: repeat(21, 1fr);
+        }
+
+        #buttons {
+            width: 80vmin;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        button {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 20px;
+            background-color: white;
+            padding: 5px;
+        }
+
+        #medium-button {
+            background-color: hsl(50, 100%, 50%);
+        }
+
+        .snake {
+            background-color: hsl(200, 100%, 50%);
+            border: .25vmin solid black;
+        }
+
+        .food {
+            background-color: hsl(50, 100%, 50%);
+            border: .25vmin solid black;
+        }
+    </style>
+    <script src="game.js" defer type="module"></script>
+</head>
+<body>
+    <h1>Snek_Gaeme</h1>
+    <div id="game-board"></div>
+    <div id="buttons">
+        <button id="easy-button" >Easy</button>
+        <button id="medium-button" >Medium</button>
+        <button id="hard-button" >Hard</button>
+    </div>
+    </div>
+</body>
+</html>
