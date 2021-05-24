@@ -17,7 +17,7 @@ function main(currentTime) {
     if (gameOver) {
         loseNoise.play()
         if (confirm('Game Over! \n\n Press ok to try again? ...')) {
-            window.location = '/';
+            window.location = '/snek-game/';
         }
         return;
     }
